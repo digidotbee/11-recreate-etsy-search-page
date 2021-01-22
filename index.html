@@ -4,11 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etsy Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="main-container"></div>
-    <div id="nav-bar"></div>
-    <div id="items-container"></div>
-    <div id="footer"></div>
+    
+    <header>
+      <nav id="search">
+        <h3>Dotsy</h3>
+        <input type="text">
+      </nav>
+      <nav id="dropDown">
+        <ul>
+          <li><section class="drop"><a id = "valentine" href="#">Valentines Day</a><section class="valentine">
+            <h2>drop down list</h2>
+          </section></li>
+          <li><a class= "jewelry" href="#">Jewelry & Accessories</a></li>
+          <li><a class= "clothing" href="#">Clothing & Shoes</a></li>
+          <li><a class= "home" href="#">Home & Living</a></li>
+          <li><a class= "wedding" href="#">Wedding & Party</a></li>
+          <li><a class= "toys" href="#">Toys & Entertainment</a></li>
+          <li><a class= "craft" href="#">Craft Supplies</a></li>
+          <li><a class= "art" href="#">Art & Collectibles</a></li>
+          <li><a class= "giftcards" href="#">Gift Cards</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="grid"></div>
+    <footer id="footer"></footer>
+    <script src="items.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
