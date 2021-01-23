@@ -6,6 +6,7 @@
 }
 
 #grid {
+    top: 125px;  
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
@@ -14,8 +15,8 @@
 
 .etsy-items {
     width: 250px;
-    margin: 20px;
-    overflow: hidden;
+    margin-left: 5vh;
+    /* overflow: hidden; */
 }
 
 .title {
@@ -34,7 +35,7 @@
 }
 
 img:hover {
-    box-shadow: 2px 2px 2px 2px rgba(211, 156, 156, 0.3);
+    box-shadow: 3px 3px 3px 3px rgba(88, 63, 63, 0.3);
 }
 
 img {
@@ -49,28 +50,32 @@ strong {
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     position: sticky;
-    top: 0px;
-    background: rgb(235, 233, 233)
+    top: 0;
+    background: rgb(247, 245, 245)
 }
 
-nav{
-    min-height: 8vh;
-    margin: auto;
-    width: 95%;
+nav {
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav h1,
-nav ul {
-    font-size: 1em;
+nav ul, #grid {
     flex: 1;
 }
 
 nav ul {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    height: 45px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -88,7 +93,33 @@ h3 {
     font-size: 38px;
 }
 
-#dropDown:hover {
+li:hover {
+    bottom: 0;
+    position: relative;
     height: 400px;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+.search-bar{
+    position: relative;
+    margin-top: 20px;
+    width: 85%;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid rgba(87, 87, 87, 0.5);
+    background-color: rgba(233, 233, 233, 0.8);  
+}
+
+.search-bar:focus{
+    width: 90%;
+    height: 48px;
+    border-radius: 25px;
+    border: 2px solid rgba(87, 87, 87, 0.8);
+    background-color: rgba(233, 233, 233, 0.8);
+}
+
+#dotsy{
+    width: 125px;
+    text-align: center;
+}
+
