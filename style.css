@@ -5,7 +5,172 @@
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 }
 
+nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 0;
+    background: rgb(247, 245, 245)
+}
+
+/* nav,
+nav ul, #grid {
+    flex: 1;
+} */
+
+nav .nav-list {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    height: 45px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(228, 121, 28);
+    font-size: 38px;
+}
+
+.search-bar {
+    position: relative;
+    margin-top: 20px;
+    width: 85%;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid rgba(87, 87, 87, 0.5);
+    background-color: rgba(233, 233, 233, 0.8);  
+}
+
+.search-bar:focus {
+    width: 90%;
+    height: 48px;
+    border-radius: 25px;
+    border: 2px solid rgba(87, 87, 87, 0.8);
+    background-color: rgba(233, 233, 233, 0.8);
+}
+#mag_glass {
+    position: relative;
+    top: 9px;
+    left: -45px;
+    font-size: 16pt;
+    color: rgba(87, 87, 87, 1);
+    border: none;
+}
+
+#cancel {
+    position: relative;
+    top: 9px;
+    left: -60px;
+    font-size: 16pt;
+    color: rgba(87, 87, 87, 1);
+    border: none;
+}
+
+#sign_in {
+    position: relative;
+    left: -10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 40%;
+    height: 40px;
+    width: 50px;
+    background-color: rgb(247, 245, 245);
+}
+
+#cart {
+    border: none;
+    font-size: 18pt;
+    color: rgba(87, 87, 87, 1);
+    background-color: rgb(247, 245, 245);
+    border-radius: 40%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+ul {
+    width: 100%;
+}
+.nav-label .dropdown {
+    display: none;
+}
+  
+.nav-label .dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-label:hover > .dropdown {
+    display: flex;
+}
+.dropdown-item {
+    display: flex;
+    flex-direction: row;
+}
+
+#drop-list-ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-list{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    width: auto;  
+}
+
+.drop-down-over {
+    font-size: 16pt;
+    font-weight: 650;
+    color: rgba(87, 87, 87, .7);
+}
+.dropdown-block {
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: -20px;
+}
+
+.dropdown-item:hover > .dropdown-block {
+    background-color:rgb(247, 245, 245);
+    height: 325px;
+    width: 1100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    /* flex-direction: column; */
+}
+
 #grid {
+    width: 100%;
+    margin: 0 auto;
     top: 125px;  
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +199,13 @@
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 }
 
+.views{
+    font-size: 10pt;
+    font-weight: lighter;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+
+}
+
 img:hover {
     box-shadow: 3px 3px 3px 3px rgba(88, 63, 63, 0.3);
 }
@@ -42,84 +214,5 @@ img {
     object-fit: cover;
     object-position: center;
     height: 200px;
-}
-
-strong {
-    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-    font-size: 12pt;
-}
-
-header{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    background: rgb(247, 245, 245)
-}
-
-nav {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav h1,
-nav ul, #grid {
-    flex: 1;
-}
-
-nav ul {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    height: 45px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav a {
-    color: #222;
-    text-decoration: none;
-    font-size: 10pt;
-}
-
-h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(228, 121, 28);
-    font-size: 38px;
-}
-
-li:hover {
-    bottom: 0;
-    position: relative;
-    height: 400px;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.search-bar{
-    position: relative;
-    margin-top: 20px;
-    width: 85%;
-    height: 45px;
-    border-radius: 25px;
-    border: 1px solid rgba(87, 87, 87, 0.5);
-    background-color: rgba(233, 233, 233, 0.8);  
-}
-
-.search-bar:focus{
-    width: 90%;
-    height: 48px;
-    border-radius: 25px;
-    border: 2px solid rgba(87, 87, 87, 0.8);
-    background-color: rgba(233, 233, 233, 0.8);
-}
-
-#dotsy{
-    width: 125px;
-    text-align: center;
 }
 

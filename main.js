@@ -11,11 +11,12 @@ const productsHtml = products.map (function (item) {
         <h2 class = "title">${item.title}</h2> 
         <div class = "shop">Ad by: ${item.Shop.shop_name}</div>
         <div class = "stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="views">(${item.views})</span>
         </div>
             <strong>$${item.price}</strong>
     </div>`
