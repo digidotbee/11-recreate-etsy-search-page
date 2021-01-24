@@ -21,6 +21,33 @@ const productsHtml = products.map (function (item) {
             <strong>$${item.price}</strong>
     </div>`
 }).join('')
-console.log (productsHtml)
+// console.log (productsHtml)
 
 document.querySelector('#grid').innerHTML = productsHtml
+
+//  Creating the InnerHTML for the side hover panel in   VV
+//  the drop down list.                                  VV
+
+const arr = ['Scotch', 'Bourbon', 'Vodka','Champagne']
+const arrSubItems = ['Glassware', 'Shakers', 'Recipes']
+
+let subItems =
+arrSubItems.map ((subMenu) => `<div class= "sub-sub-menu">${subMenu}</div>`).join('')
+// console.log(subItems)
+
+let dropMenu =
+arr.map (function (menuItems) {
+    return `<ul class= "drop-list-side">
+                <li class= "bold"><h2 style= "color: rgba(87, 87, 87, 1); 
+                text-align: center; 
+                font-size: 18pt;>${menuItems}</h2></li>
+                    <ul class= "submenu"><li>${subItems}</li>`
+            
+}).join('')
+
+console.log(dropMenu)
+document.querySelector('.drop-list').innerHTML = dropMenu
+
+
+
+
