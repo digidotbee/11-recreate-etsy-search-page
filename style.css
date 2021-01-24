@@ -31,7 +31,7 @@ nav ul, #grid {
 nav .nav-list {
     margin-top: 10px;
     /* margin-bottom: 10px; */
-    height: 45px;
+    height: 40px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -110,26 +110,22 @@ h3 {
     margin-top: 10px;
 }
 
+/* Start of the Nav Bar Menu Items */
+
 ul {
     width: 100%;
 }
-.nav-label .dropdown {
+.nav-label {
     display: none;
 }
   
-.nav-label .dropdown {
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
 .nav-list {
     display: flex;
 }
 
-.nav-label:hover > .dropdown {
+/* .nav-label:hover > {
     display: flex;
-}
+} */
 .dropdown-item {
     display: flex;
     flex-direction: row;
@@ -140,32 +136,84 @@ ul {
     flex-direction: column;
 }
 
+/* Formatting for drop-down side .submenu */
+.drop-list-side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Formatting for the sub-sub-menu list of links below the headings in the side sub menu. */
+
+.sub-sub-menu {
+    text-align: start;
+    font-size: 8pt;
+}
+
 .drop-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 45px;
     width: auto;  
 }
 
+/* Styling for the list items on the side sub menu */
+.submenu {
+    text-align: left;
+}
 .drop-down-over {
-    font-size: 16pt;
-    font-weight: 500;
-    color: rgba(87, 87, 87, .7);
+    font-size: 12pt;
+    /* font-weight: 500; */
+    color: rgba(0, 0, 0, 0.7);
 }
 .dropdown-block {
     display: none;
     position: absolute;
-    top: 44px;
+    top: 40px;
     left: -20px;
 }
 
+/* for styling the drop down mega menu when hovering. */
 .dropdown-item:hover > .dropdown-block {
     background-color:rgb(247, 245, 245);
     height: 325px;
-    width: 1100%;
+    width: 1120%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+}
+/* styling for the sub menu 
+on the side of the drop down */
+
+.sub-sub {
+    padding-top: 8px;
+    text-indent: 10px;
+    border-right: 1.5px solid  rgba(87, 87, 87, 1);
+    display: absolute;
+    width: 35%;
+    left: 5px;
+}
+
+.sub-sub:hover {
+    background-color: rgba(red, green, blue, alpha);
+
+}
+
+.drop-list-ul{
+    width: 33%;
+}
+
+/* Start where to style my next hover over menu to the side. */
+.drop-down-over {
+    display: none;
+}
+
+.drop-list:hover > .drop-down-over {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
 }
 
 #grid {
@@ -214,5 +262,36 @@ img {
     object-fit: cover;
     object-position: center;
     height: 200px;
+}
+
+.more {
+    margin-top: 10px;
+    text-indent: 25px;
+    text-align: left;
+    justify-items: center;
+    font-size: 14pt;
+    height: 55px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* STart stayling for the page buttons */
+
+.page {
+    margin: 20px 40px 20px 10px;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(216, 213, 213);
+}
+
+footer {
+    padding: 25px;
+    height: 100px;
+    background-color: rgb(3, 10, 75);
+    color: seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
