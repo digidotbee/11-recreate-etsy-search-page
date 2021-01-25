@@ -32,20 +32,19 @@ const arr = ['Scotch', 'Bourbon', 'Vodka','Champagne']
 const arrSubItems = ['Glassware', 'Shakers', 'Recipes']
 
 let subItems =
-arrSubItems.map ((subMenu) => `<div class="sub-sub-menu">${subMenu}</div>`).join('')
+arrSubItems.map ((subMenu) => `<li><a class= "sub-sub-menu" href= "#">${subMenu}</a></li>`).join ('')
 // console.log(subItems)
 
 let dropMenu =
 arr.map (function (menuItems) {
     return `<ul class= "drop-list-side">
-                <li class= "bold"><div style= "color: rgba(87, 87, 87, 1); 
-                text-align: center; 
-                font-size: 14pt;">${menuItems}</div></li>
-                    <ul class= "submenu"><li> ${subItems} </li>`           
+                <li class= "bold"><a class="alcohol" href="#"> ${menuItems} </a></li>${subItems}`           
 }).join('')
 
 console.log(dropMenu)
 document.querySelector('.drop-down-over').innerHTML = dropMenu
+
+// document.querySelector('.sub-sub').innerHTML = dropMenu
 
 
 

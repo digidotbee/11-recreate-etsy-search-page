@@ -139,7 +139,7 @@ ul {
 /* Formatting for drop-down side .submenu */
 .drop-list-side {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: flex-start;
 }
@@ -158,20 +158,30 @@ ul {
     width: auto;  
 }
 
-/* Styling for the list items on the side sub menu */
+/* Styling for the list items on the side drop down menu */
 .submenu {
+    height: 40px;
     text-align: left;
+    text-indent: 10px;
+    width: 33%;
 }
+
 .drop-down-over {
-    font-size: 12pt;
+    font-size: 14pt;
     /* font-weight: 500; */
     color: rgba(0, 0, 0, 0.7);
 }
+
 .dropdown-block {
     display: none;
     position: absolute;
     top: 40px;
     left: -20px;
+}
+
+.drop-list-side {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* for styling the drop down mega menu when hovering. */
@@ -196,7 +206,7 @@ on the side of the drop down */
 }
 
 .sub-sub:hover {
-    background-color: rgba(red, green, blue, alpha);
+    background-color: rgba(191, 188, 188, .8);
 
 }
 
@@ -216,6 +226,13 @@ on the side of the drop down */
     height: 50px;
 }
 
+.drop-list-side {
+    height: 40px;
+    width: 33%;
+}
+
+/* STart styling for the grid */
+
 #grid {
     width: 100%;
     margin: 0 auto;
@@ -228,11 +245,18 @@ on the side of the drop down */
 
 .etsy-items {
     width: 250px;
+    margin-top: 10px;
     margin-left: 5vh;
+    margin-bottom: 10px;
     /* overflow: hidden; */
 }
 
+.strong {
+    margin-top: 5px;
+}
+
 .title {
+    margin-top: 5px;
     font-size: medium;
     font-weight: normal;
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
@@ -265,7 +289,7 @@ img {
 }
 
 .more {
-    margin-top: 10px;
+    margin-top: 25px;
     text-indent: 25px;
     text-align: left;
     justify-items: center;
@@ -274,15 +298,21 @@ img {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* STart stayling for the page buttons */
+/* Start styling for the page buttons */
 
 .page {
-    margin: 20px 40px 20px 10px;
+    position: relative;
+    right: -12px;
+    margin: 10px 10px 10px 10px;
     border-radius: 50%;
     border: none;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     background-color: rgb(216, 213, 213);
+}
+
+.page:hover {
+    background-color: rgba(188, 184, 184, 0.9);
 }
 
 footer {
@@ -294,4 +324,3 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
 }
-
